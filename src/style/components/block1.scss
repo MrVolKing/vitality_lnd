@@ -1,0 +1,210 @@
+.content{
+	background-color:  rgba(232,232,232,1);
+}
+
+.topBlock{
+	background-color: #00214e;
+	padding-top: 125px;
+
+	border-bottom-left-radius: 45px;
+	border-bottom-right-radius: 45px;
+	padding-bottom: 50px;
+	margin-bottom: 40px;
+
+
+	&__titleBlock{
+		margin-bottom: 20px;
+	}
+
+	&__titleItemText{
+		color: #ffffff;
+		font-size: 29px;
+		font-weight: 400;
+		line-height: 58.33px;
+		font-family: Montserrat;
+		&.active{
+			font-size: 44px;
+			font-weight: 800;
+		}
+	}
+
+	&__descText{
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 21px;
+		font-weight: 400;
+	}
+
+	&__iconBlock{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__iconItem{
+		padding: 48px 15px 47px 15px;
+		&.active{
+			box-shadow: inset 0px -200px 90px -70px rgba(0,65,110,1);
+		}
+	}
+}
+
+.boxBlock{
+	background-color: #e8e8e8;
+	border-radius: 45px;
+	padding: 36px 0;
+	margin-bottom: 32px;
+
+	&__descBlock{
+		padding: 0 15px 0 21px;
+		margin-bottom: 10px;
+	}
+
+	&__descText{
+		color: #00132f;
+		font-family: Montserrat;
+		font-size: 21px;
+		font-weight: 400;
+	}
+
+	&__priceBlock{
+		padding: 0 20px;
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__oldPrice{
+		opacity: 0.74;
+		color: #00132f;
+		font-family: Montserrat;
+		font-size: 31px;
+		font-weight: 400;
+		position: relative;
+		&:before{
+			content: "";
+			position: absolute;
+			width: 2px;
+			height: 115px;
+			z-index: 1000;
+			bottom: 0;
+			background-color: #00132f;
+			transform: rotate(75deg);
+			left: 55px;
+			top: -39px;
+		}
+	}
+
+	&__newPrice{
+		color: #00132f;
+		font-family: Montserrat;
+		font-size: 33px;
+		font-weight: 800;
+	}
+
+	&__buttonBlock{
+		display: flex;
+		justify-content: center;
+	}
+}
+
+
+.secondBlock{
+	position: relative;
+	background: linear-gradient(180deg, rgba(232,232,232,1) 20%, rgba(255,255,255,1) 80%);
+	border-bottom-left-radius: 45px;
+	border-bottom-right-radius: 45px;
+	padding-bottom: 200px;
+
+	.wrapper{
+		padding: 0 18px 0 20px;
+	}
+
+	&__arm{
+		position: absolute;
+		
+		&--1{
+			top: 10px;
+			right: -20px;
+		}
+
+		&--2{
+			top: -210px;
+			left: -20px;
+		}
+
+		&--3{
+			top: -160px;
+			right: -20px;
+		}
+
+		&--4{
+			top: -155px;
+			right: -20px;
+		}
+
+		&--5{
+			bottom: -780px;
+		}
+	}
+
+	&__descBlock{
+		margin-bottom: 46px;
+		position: relative;
+		z-index: 1000;
+
+		&--2{
+			margin-bottom: 245px;
+		}
+
+		&--3{
+			margin-bottom: 178px;
+		}
+	}
+
+	&__descItem{
+		margin-bottom: 25px;
+	}
+
+	&__descText{
+		color: #00132f;
+		font-family: Montserrat;
+		font-size: 21px;
+		font-weight: 400;
+	}
+
+	&__searchBlock{
+		margin-bottom: 32px;
+	}
+
+	&__search{
+		width: 100%;
+		height: 66px;
+		border-radius: 28px;
+		background-color: #001f4b;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 0 16px 0 27px;
+	}
+
+	&__searchText{
+		color: #fefefe;
+		font-family: Montserrat;
+		font-size: 17px;
+		font-weight: 700;
+	}
+
+	&__numBlock{
+		position: relative;
+		margin-bottom: 37px;
+	}
+
+	&__num{
+		opacity: 0.21;
+		color: #00132f;
+		font-family: Montserrat;
+		font-size: 210px;
+		line-height: 150px;
+		font-weight: 800;
+	}
+}

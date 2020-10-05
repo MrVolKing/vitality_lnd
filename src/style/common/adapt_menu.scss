@@ -1,0 +1,47 @@
+.close, .burger{
+    display: none;
+}
+
+
+@media screen and (max-width:769px){
+    .close, .burger{
+        display: block;
+    }
+
+    .adaptmenu{
+        transform: translateX(120%);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        transition: 1s;
+        width: 50vw;
+        background-color: white;
+        height: 100vh;
+        position: fixed;
+        flex-direction: column;
+        z-index: 1000;
+        top: 0;
+        right: 0;
+        padding: 20px;
+    }
+
+    .close{
+        width: 36px;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+.adaptmenu_active{
+    transform: translateX(0);
+}
+
+
+@media screen and (max-width:500px){
+    .close{
+        width: 18px;
+        img{
+            width: 100%;
+        }
+    }
+}

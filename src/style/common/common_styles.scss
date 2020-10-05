@@ -1,0 +1,80 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+textarea {
+    resize: vertical;
+    }
+
+
+
+
+
+
+
+// my style
+
+* {
+    transition:all .1s ease-in-out
+}
+
+// html{
+//     font-size: 1.1111111vw;
+// }
+
+// @media screen and (max-width:769px){
+//     html{
+//         font-size: 16px;
+//     }
+// }
+
+.content{
+    overflow: hidden;
+}
+
+body{
+    position: relative;
+    font-family: Montserrat;
+    color: #00132f;
+}
+
+a{
+    cursor: pointer !important;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: Montserrat; 
+    src: url("../fonts/Montserrat-Regular.eot"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype"),
+    url("../fonts/Montserrat-Regular.woff") format("woff"), 
+    url("../fonts/Montserrat-Regular.woff2") format("woff2"), 
+    url("../fonts/Montserrat-Regular.otf") format("opentype"),
+    url("../fonts/Montserrat-Regular.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: Montserrat; 
+    src: url("../fonts/Montserrat-ExtraBold.eot"),
+    url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"),
+    url("../fonts/Montserrat-ExtraBold.woff") format("woff"), 
+    url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), 
+    url("../fonts/Montserrat-ExtraBold.otf") format("opentype"),
+    url("../fonts/Montserrat-ExtraBold.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: 800; 
+}

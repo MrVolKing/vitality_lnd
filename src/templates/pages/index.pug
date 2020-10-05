@@ -1,0 +1,114 @@
+extends ../template
+
+block varibles
+    - var title = "Vitality"
+
+block content
+   
+    .content
+        include ../common/header.pug
+
+        .topBlock
+            .wrapper
+                .topBlock__titleBlock
+                    .topBlock__titleItem
+                        h2.topBlock__titleItemText Планування.
+                    .topBlock__titleItem
+                        h2.topBlock__titleItemText.active Вагітність.
+                    .topBlock__titleItem
+                        h2.topBlock__titleItemText Материнство.
+
+                .topBlock__descBlock
+                    span.topBlock__descText  Orthomol Natal – німецький вітамінний комплекс для мам від планування вагітності до завершення годування.
+
+            .topBlock__iconBlock
+                .topBlock__iconItem
+                    img(src="./images/1.png", alt="")
+                .topBlock__iconItem.active
+                    img(src="./images/2.png", alt="")
+                .topBlock__iconItem
+                    img(src="./images/3.png", alt="")
+
+
+            .topBlock__boxBlock
+                .boxBlock
+                    .boxBlock__descBlock   
+                        p.boxBlock__descText З самого моменту планування вагітності у жіночому житті починається особливий період. 
+                        p.boxBlock__descText Саме тоді для майбутньої мами потрібен ще більш чутливий догляд та турбота.
+                    img(src="./images/box.png", alt="").boxBlock__box
+                    .boxBlock__priceBlock
+                        span.boxBlock__oldPrice 4500 грн
+                        span.boxBlock__newPrice 3000* грн
+                    
+                    .boxBlock__buttonBlock
+                        button.button КУПИТИ
+
+            .wrapper
+                .topBlock__descBlock
+                    span.topBlock__descText Для цього німецька компания «Orthomol GmbH» розробила сучасний вітамінний комплекс Orthomol Natal, який містить все необхідне для здоров'я мами та малюка.
+
+
+        .secondBlock  
+            //- img(src="./images/arm_1.png", alt="").secondBlock__arm.secondBlock__arm--1
+            //- img(src="./images/arm_2.png", alt="").secondBlock__arm.secondBlock__arm--2 
+            //- img(src="./images/arm_3.png", alt="").secondBlock__arm.secondBlock__arm--3
+            //- img(src="./images/arm_4.png", alt="").secondBlock__arm.secondBlock__arm--4
+            img(src="./images/arm_5.png", alt="").secondBlock__arm.secondBlock__arm--5
+            .wrapper
+                .secondBlock__descBlock
+                    .secondBlock__descItem
+                        p.secondBlock__descText Вагітнітність це приємна відповідальність. Тому майбутні мами починають готуватися до цієї події заздалегідь. Вітамінний комплекс розрахований на початок прийому за 3-4 місяці до запліднення. 
+                        p.secondBlock__descText Його приймають весь період вагітності та годування.  
+                    .secondBlock__descItem
+                        p.secondBlock__descText 
+                            b Orthomol Natal 
+                            | допомагає отримати всі необхідні речовини на кожному з цих етапів, для здорового запліднення, вагітності та поживного годування малюка.
+
+                
+                .secondBlock__searchBlock
+                    .secondBlock__search    
+                        .secondBlock__searchText
+                            span#typing Що входить до складу?
+                        img(src="./images/search.png", alt="").secondBlock__icon
+
+                .secondBlock__numBlock
+                    img(src="./images/arm_1.png", alt="").secondBlock__arm.secondBlock__arm--1
+                    span.secondBlock__num 1
+
+                .secondBlock__descBlock.secondBlock__descBlock--2
+                    .secondBlock__descItem
+                        p.secondBlock__descText
+                            b 30 пакетиків з вітамінами у вигляді порошка.
+                        p.secondBlock__descText Порошок потрібно розчинити у воді або змішати з фруктовим соком.
+                        p.secondBlock__descText Приймати один раз на день. Ще і смачно!
+
+                    
+                .secondBlock__numBlock
+                    img(src="./images/arm_2.png", alt="").secondBlock__arm.secondBlock__arm--2 
+                    img(src="./images/arm_3.png", alt="").secondBlock__arm.secondBlock__arm--3
+                    span.secondBlock__num 2
+
+
+                .secondBlock__descBlock.secondBlock__descBlock--3
+                    .secondBlock__descItem
+                        p.secondBlock__descText
+                            b 30 пакетиків з двома капсулами у кожному.
+                        p.secondBlock__descText Капсули з додатковими вітамінами приймають двічи на день, разом зі сніданком або на обід. 
+
+
+                .secondBlock__numBlock
+                    img(src="./images/arm_4.png", alt="").secondBlock__arm.secondBlock__arm--4
+                    span.secondBlock__num 3
+
+
+                .secondBlock__descBlock
+                    .secondBlock__descItem
+                        p.secondBlock__descText
+                            b 30 капсул з пробіотиком.
+                        p.secondBlock__descText Пробіотики – це корисні бактерії. 
+                        p.secondBlock__descText Капсулу з пробіотиком приймають кожен день, на ніч.
+
+
+        
+
+        //- include ../common/footer.pug

@@ -1,20 +1,36 @@
 .header{
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 49px 0 43px 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 49px 0 43px 0;
 
-  &__content{
-      display: flex;
-      justify-content: space-between;
-  }
+	&__content{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__right{
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo{
+		display: flex;
+		justify-content: flex-end;
+		img{
+			width: 100%;
+		}
+		
+	}
 
  
 }
 
-
-@media screen and (max-width:500px){
-    .header{
-    }
+@media screen and (max-width:370px){
+	.header{
+		img{
+			width: 96%;
+		}	
+	}
 }

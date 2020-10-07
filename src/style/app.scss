@@ -5,11 +5,19 @@
 
 @import "common/common_styles.scss";
 @import "common/wrapper.scss";
+@import "common/buttons.scss";
+@import "common/swiper.scss"; 
 @import "common/header.scss"; 
-@import "common/adapt_menu.scss";
 @import "common/footer.scss";
-@import "common/buttons.scss"; 
-@import "common/title.scss";
+
+
+
+// @import "common/adapt_menu.scss";
+// @import "common/title.scss";
 
 
 @import "components/block1.scss";
+@import "components/block2.scss";
+@import "components/block3.scss";
+@import "components/block4.scss";
+@import "components/block5.scss";

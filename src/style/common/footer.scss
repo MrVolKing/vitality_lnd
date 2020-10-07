@@ -1,8 +1,88 @@
 .footer{
+	position: relative;
+	z-index: 1;
+	background-color: #001e49;
+	padding-top: 37px;
+	background-image: url("../images/ua.png");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: top 110px right 20px;
+	&__top{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__share{
+		display: flex;
+	}
+
+	&__icn{
+		&:first-child{
+			margin-right: 25px;
+		}
+	}
+
+	&__phoneBlock{
+		// display: flex;
+	}
+
+	&__phone{
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 22px;
+		font-weight: 800;
+	}
+
+	&__phoneDesc{
+		span{
+			color: #ffffff;
+			font-family: Montserrat;
+			font-size: 16px;
+			font-weight: 400;
+		}
+	}
+
+	&__middle{
+		padding: 57px 0 32px 0;
+		span{
+			color: #ffffff;
+			font-family: Montserrat;
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 16.67px;
+			text-transform: uppercase;
+		}
+	}
+
+	&__bottom{
+		background-color: #001330;
+		padding: 16px 45px 22px 21px;
+	}
+
+	&__dl{
+		color: #ffffff;
+		font-family: Montserrat;
+		font-size: 12px;
+		font-weight: 400;
+		
+	}
 }
 
-@media screen and (max-width:500px){
-    .footer{
+
+
+
+
+
+
+
+
+
+
+
+
+// @media screen and (max-width:500px){
+//     .footer{
        
-    }     
-}
+//     }     
+// }

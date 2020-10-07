@@ -1,7 +1,3 @@
-.content{
-	background-color:  rgba(232,232,232,1);
-}
-
 .topBlock{
 	background-color: #00214e;
 	padding-top: 125px;
@@ -38,25 +34,66 @@
 	&__iconBlock{
 		display: flex;
 		justify-content: space-between;
+		position: relative;
+		z-index: 1;
 	}
 
 	&__iconItem{
 		padding: 48px 15px 47px 15px;
-		&.active{
-			box-shadow: inset 0px -200px 90px -70px rgba(0,65,110,1);
+		padding: 30px 15px 30px 15px;
+		width: 32%;
+		position: relative;
+		
+		img, svg{
+			width: 100%;
+			fill: white;	
+			position: relative;
+			z-index: 2;
+			transform: scale(1.4);
+			opacity: .4;
 		}
+
+		
+
+		&.active{
+			&:before{
+				position: absolute;
+				left: 0;
+				top: 0;
+				content: "";
+				width: 100%;
+				height: 130%;
+				box-shadow: inset 0px -200px 90px -70px rgba(0,65,110,1);
+			}
+			img{
+				opacity: 1;
+			}
+		}
+	}
+
+	&__boxBlock{
+		position: relative;
+		z-index: 2;
 	}
 }
 
 .boxBlock{
 	background-color: #e8e8e8;
 	border-radius: 45px;
-	padding: 36px 0;
+	padding: 36px 0 45px 0;
 	margin-bottom: 32px;
+
+	&--2{
+		padding-top: 10px;
+		margin-bottom: 0;
+		padding-bottom: 37px;
+	}
 
 	&__descBlock{
 		padding: 0 15px 0 21px;
-		margin-bottom: 10px;
+		&--2{
+			margin-bottom: 27px;
+		}
 	}
 
 	&__descText{
@@ -66,9 +103,17 @@
 		font-weight: 400;
 	}
 
+	&__boxWrapper{
+		padding: 0 20px;
+		img{
+			width: 100%;
+		}
+	}
+
 	&__priceBlock{
 		padding: 0 20px;
 		margin-bottom: 20px;
+		margin-top: -30px;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -104,107 +149,9 @@
 	&__buttonBlock{
 		display: flex;
 		justify-content: center;
-	}
-}
-
-
-.secondBlock{
-	position: relative;
-	background: linear-gradient(180deg, rgba(232,232,232,1) 20%, rgba(255,255,255,1) 80%);
-	border-bottom-left-radius: 45px;
-	border-bottom-right-radius: 45px;
-	padding-bottom: 200px;
-
-	.wrapper{
-		padding: 0 18px 0 20px;
-	}
-
-	&__arm{
-		position: absolute;
-		
-		&--1{
-			top: 10px;
-			right: -20px;
-		}
 
 		&--2{
-			top: -210px;
-			left: -20px;
+			margin-bottom: 38px;
 		}
-
-		&--3{
-			top: -160px;
-			right: -20px;
-		}
-
-		&--4{
-			top: -155px;
-			right: -20px;
-		}
-
-		&--5{
-			bottom: -780px;
-		}
-	}
-
-	&__descBlock{
-		margin-bottom: 46px;
-		position: relative;
-		z-index: 1000;
-
-		&--2{
-			margin-bottom: 245px;
-		}
-
-		&--3{
-			margin-bottom: 178px;
-		}
-	}
-
-	&__descItem{
-		margin-bottom: 25px;
-	}
-
-	&__descText{
-		color: #00132f;
-		font-family: Montserrat;
-		font-size: 21px;
-		font-weight: 400;
-	}
-
-	&__searchBlock{
-		margin-bottom: 32px;
-	}
-
-	&__search{
-		width: 100%;
-		height: 66px;
-		border-radius: 28px;
-		background-color: #001f4b;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		padding: 0 16px 0 27px;
-	}
-
-	&__searchText{
-		color: #fefefe;
-		font-family: Montserrat;
-		font-size: 17px;
-		font-weight: 700;
-	}
-
-	&__numBlock{
-		position: relative;
-		margin-bottom: 37px;
-	}
-
-	&__num{
-		opacity: 0.21;
-		color: #00132f;
-		font-family: Montserrat;
-		font-size: 210px;
-		line-height: 150px;
-		font-weight: 800;
 	}
 }

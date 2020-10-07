@@ -1,3 +1,22 @@
+@keyframes pulse { 
+    0% {
+        transform: scale(1);
+    } 
+    38% {
+        transform: scale(1);
+    } 
+    50% {
+        transform: scale(1.05);
+    } 
+    62% {
+        transform: scale(1);
+        
+    } 
+    100% {
+        transform: scale(1);
+    } 
+}
+
 .button{
     // display: flex;
     // align-items: center;
@@ -7,21 +26,42 @@
     border-radius: 24px;
     border: none;
     font-family: Montserrat;
-    font-size: rem(16);
+    font-size: 21px;
     color: white;
-    font-size: 25px;
     font-weight: 800;
     text-transform: uppercase;
     background-color: #dc007d;
+    outline: none;
+    transition: 0s;
+    // background-color: rgba(220, 0, 125, 0.85);
+    transform: scale(1);
+    animation: 3s linear infinite pulse;
+    &--blue{
+        width: 278px;
+        box-shadow: 0 3px 18px rgba(0, 0, 0, 0.35);
+        border-radius: 24px;
+        background-color: #1a2857;
+    }
+
     &:hover{
-        background: $brand_color;
-        color: $white;
     }
     &:active{
-        background: none;
-        color: $brand_color;
+        filter: brightness(0.85);
+        transition: 0s;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // @media screen and (max-width:500px){

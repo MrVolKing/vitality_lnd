@@ -139,5 +139,6 @@ window.addEventListener('scroll', function(e) {
     var el = document.querySelector('.secondBlock');
     if (window.scrollY > el.offsetTop) {
         type();
+        
     }
 });

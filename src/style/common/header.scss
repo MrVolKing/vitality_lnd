@@ -10,6 +10,10 @@
 		justify-content: space-between;
 	}
 
+	&__germ{
+		display: none;
+	}
+
 	&__right{
 		display: flex;
 		align-items: center;
@@ -19,7 +23,8 @@
 		display: flex;
 		justify-content: flex-end;
 		img{
-			width: 100%;
+			width: 288px;
+			height: 34px;
 		}
 		
 	}
@@ -32,5 +37,33 @@
 		img{
 			width: 96%;
 		}	
+	}
+}
+
+@media screen and (min-width:1200px){
+	.header{
+		background: #021b3f;
+		border-bottom-left-radius: 70px;
+		border-bottom-right-radius: 70px;
+		padding: 42px 0;
+
+		&__content{
+			flex-direction: row-reverse;
+		}
+
+		&__logo{
+			img{
+				width: auto;
+				height: auto;
+			}
+		}
+
+		&__select{
+			display: none;
+		}
+
+		&__germ{
+			display: block;
+		}
 	}
 }

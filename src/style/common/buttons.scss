@@ -18,33 +18,74 @@
 }
 
 .button{
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
-    width: 219px;
-    height: 48px;
-    border-radius: 24px;
+    width: rem(338);
+    height: rem(73);
     border: none;
     font-family: Montserrat;
-    font-size: 21px;
+    font-size: rem(39);
     color: white;
     font-weight: 800;
     text-transform: uppercase;
     background-color: #dc007d;
+    box-shadow: 0 rem(3) rem(18) rgba(0, 0, 0, 0.35);
+    border-radius: rem(37);
     outline: none;
     transition: 0s;
-    // background-color: rgba(220, 0, 125, 0.85);
     transform: scale(1);
     animation: 3s linear infinite pulse;
     &--blue{
-        width: 278px;
-        box-shadow: 0 3px 18px rgba(0, 0, 0, 0.35);
-        border-radius: 24px;
+        width: rem(460);
+        height: rem(78);
+        box-shadow: 0 rem(3) rem(18) rgba(0, 0, 0, 0.35);
         background-color: #1a2857;
     }
 
-    &:hover{
+    &--submit{
+        width: rem(483);
+        height: rem(122);
+        box-shadow: 0 rem(3) rem(18) rgba(0, 0, 0, 0.35);
+        border-radius: rem(56);
+        font-size: rem(25);
+        background-color: #dc007d;
+        margin-right: rem(77);
     }
+
+    &--close{
+        width: rem(483);
+        height: rem(122);
+        box-shadow: 0 rem(3) rem(18) rgba(0, 0, 0, 0.35);
+        border-radius: rem(56);
+        font-size: rem(25);
+        background-color: #001f4b;
+    }
+
+    &--thanks{
+        width: rem(332);
+        height: rem(66);
+        font-size: rem(33);
+        padding-left: rem(70);
+        text-align: left;
+        background-image: url("../images/heart.png");
+        background-repeat: no-repeat;
+        background-position: top rem(14) right rem(60);
+        background-size: rem(45) rem(38);
+    }
+
+    &--back, &--next{
+        width: rem(383);
+        height: rem(80);
+        font-size: 39px;
+    }
+
+    &--back{
+        background-color: #001f4b;
+        margin-right: rem(50);
+    }
+
+    &:hover{
+        cursor: pointer;
+    }
+    
     &:active{
         filter: brightness(0.85);
         transition: 0s;
@@ -52,6 +93,17 @@
 }
 
 
+
+@media screen and (max-width:769px){
+    .button{
+        width: 219px;
+        height: 48px;
+        box-shadow: 0 3px 18px rgba(0, 0, 0, 0.35);
+        border-radius: 24px;
+        background-color: #dc007d;
+        font-size: 25px;
+    }
+}
 
 
 

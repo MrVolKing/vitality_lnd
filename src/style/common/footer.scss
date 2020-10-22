@@ -2,69 +2,86 @@
 	position: relative;
 	z-index: 1;
 	background-color: #001e49;
-	padding-top: 37px;
-	background-image: url("../images/ua.png");
-	background-size: auto;
-	background-repeat: no-repeat;
-	background-position: top 110px right 20px;
+	padding-top: rem(110);
+	margin-top: rem(-2);
+	color: white;
+
+	&__content{
+		background-image: url("../images/ua.png");
+		background-repeat: no-repeat;
+		background-size: rem(238) rem(163);
+		background-position: center top;
+
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		padding-bottom: rem(57);
+	}
+
+	&__middle{
+		span{
+			color: #ffffff;
+			font-family: Montserrat;
+			font-size: rem(33);
+			font-weight: 400;
+			font-style: normal;
+			letter-spacing: normal;
+			line-height: rem(50);
+		}
+	}
+
 	&__top{
 		display: flex;
-		justify-content: space-between;
-		align-items: center;
+		flex-direction: row-reverse;
 	}
 
 	&__share{
 		display: flex;
+		flex-direction: column;
 	}
 
 	&__icn{
-		&:first-child{
-			margin-right: 25px;
+		img{
+			width: rem(64);
+			height: rem(64);
+			&:first-child{
+				margin-bottom: rem(27);
+			}
 		}
 	}
 
 	&__phoneBlock{
-		// display: flex;
+		margin-right: rem(127);
 	}
 
 	&__phone{
 		color: #ffffff;
 		font-family: Montserrat;
-		font-size: 22px;
+		font-size: rem(46);
 		font-weight: 800;
+		margin-bottom: rem(21);
 	}
 
 	&__phoneDesc{
 		span{
 			color: #ffffff;
 			font-family: Montserrat;
-			font-size: 16px;
+			font-size: rem(33);
 			font-weight: 400;
-		}
-	}
-
-	&__middle{
-		padding: 57px 0 32px 0;
-		span{
-			color: #ffffff;
-			font-family: Montserrat;
-			font-size: 13px;
-			font-weight: 400;
-			line-height: 16.67px;
-			text-transform: uppercase;
 		}
 	}
 
 	&__bottom{
 		background-color: #001330;
-		padding: 16px 45px 22px 21px;
+		padding: rem(70) 0;
 	}
 
 	&__dl{
 		color: #ffffff;
 		font-family: Montserrat;
-		font-size: 12px;
+		font-size: rem(25);
 		font-weight: 400;
+		font-style: italic;
 		
 	}
 }
@@ -74,15 +91,90 @@
 
 
 
+@media screen and (max-width:769px){
+	.footer{
+		position: relative;
+		z-index: 1;
+		background-color: #001e49;
+		padding-top: 37px;
+		background-image: url("../images/ua.png");
+		background-size: auto;
+		background-repeat: no-repeat;
+		background-position: top 110px right 20px;
 
+		&__content{
+			background: unset;
+			flex-direction: column;
+			padding-bottom: 0;
+		}
 
+		&__top{
+			flex-direction: row;
+			justify-content: space-between;
+		}
 
+		&__share{
+			flex-direction: row;
+		}
 
+		&__icn{
+			img{
+				width: auto;
+				height: auto;
+				&:first-child{
+					margin-bottom: 0;
+				}
+			}
+			&:first-child{
+				margin-right: 25px;
+			}
+		}
 
+		&__phoneBlock{
+			margin-right: 0;
+		}
 
+		&__phone{
+			color: #ffffff;
+			font-family: Montserrat;
+			font-size: 22px;
+			font-weight: 800;
+		}
 
-// @media screen and (max-width:500px){
-//     .footer{
-       
-//     }     
-// }
+		&__phoneDesc{
+			span{
+				color: #ffffff;
+				font-family: Montserrat;
+				font-size: 16px;
+				font-weight: 400;
+			}
+		}
+
+		&__middle{
+			padding: 57px 0 32px 0;
+			span{
+				color: #ffffff;
+				font-family: Montserrat;
+				font-size: 13px;
+				font-weight: 400;
+				line-height: 16.67px;
+				text-transform: uppercase;
+			}
+		}
+
+		&__bottom{
+			background-color: #001330;
+			padding: 16px 45px 22px 21px;
+			.wrapper{
+				padding: 0;
+			}
+		}
+
+		&__dl{
+			font-size: 12px;
+			font-weight: 400;
+			
+		}
+	}
+
+}

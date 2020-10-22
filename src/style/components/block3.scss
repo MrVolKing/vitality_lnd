@@ -1,17 +1,42 @@
 .thirdBlock{
-
-	// height: 200px;
-	margin-bottom: 90px;
+	margin-bottom: rem(160);
 }
-            // .sliderfirst
-            //     .swiper-container
-			//         .swiper-wrapper
 			
 .sliderfirst{
 	.swiper-slide{
-		height: 270px;
+		height: rem(864);
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
+	}
+}
+
+@media screen and (max-width:769px){
+	.thirdBlock{
+		height: 200px;
+		margin-bottom: 140px;
+	}
+				
+	.sliderfirst{
+		.swiper-slide{
+			height: 270px;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+
+		.swiper-button-prev, .swiper-button-next{
+			display: none;
+		}
+
+		.swiper-pagination-bullet{
+			width: 15px;
+			height: 15px;
+		}
+
+		.swiper-pagination-bullet-active{
+			width: 24px;
+			height: 24px;
+		}
 	}
 }

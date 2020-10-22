@@ -10,51 +10,74 @@ block content
         
 
         .topBlock
-            .wrapper
+            .wrapper.topBlock_mob
                 .topBlock__titleBlock
                     .topBlock__titleItem
-                        h2.topBlock__titleItemText#title1 Планування.
+                        h2.topBlock__titleItemText.title1 Планування.
                     .topBlock__titleItem
-                        h2.topBlock__titleItemText.active#title2 Вагітність.
+                        h2.topBlock__titleItemText.active.title2 Вагітність.
                     .topBlock__titleItem
-                        h2.topBlock__titleItemText#title3 Материнство.
+                        h2.topBlock__titleItemText.title3 Материнство.
 
                 .topBlock__descBlock
+                    span.topBlock__descText Orthomol Natal – німецький вітамінний комплекс для мам від планування вагітності до завершення годування.
+
+            .wrapper
+                .topBlock__iconBlock
+                    .topBlock__iconItem#icn1
+                        .topBlock__titleItem.topBlock__titleItem--desc
+                            h2.topBlock__titleItemText.title1 Планування.
+                        img(src="./images/icn1.svg", alt="")
+                    .topBlock__iconItem.active#icn2
+                        .topBlock__titleItem.topBlock__titleItem--desc
+                            h2.topBlock__titleItemText.active.title2 Вагітність.
+                        img(src="./images/icn2.svg", alt="")
+                    .topBlock__iconItem#icn3
+                        .topBlock__titleItem.topBlock__titleItem--desc
+                            h2.topBlock__titleItemText.title3 Материнство.
+                        img(src="./images/icn3.svg", alt="")
+
+            .wrapper
+                .topBlock__descBlock.topBlock__descBlock--1
                     span.topBlock__descText  
                         b Orthomol Natal 
                         | – німецький вітамінний комплекс для мам від планування вагітності до завершення годування.
 
-            .topBlock__iconBlock
-                .topBlock__iconItem#icn1
-                    img(src="./images/icn1.svg", alt="")
-                .topBlock__iconItem.active#icn2
-                    img(src="./images/icn2.svg", alt="")
-                .topBlock__iconItem#icn3
-                    img(src="./images/icn3.svg", alt="")
 
+            .wrapper.wrapper--mob
+                .topBlock__boxBlock
+                    .boxBlock
+                        .boxBlock__left
+                            .boxBlock__descBlock.boxBlock__descBlock--top  
+                                p.boxBlock__descText З самого моменту планування вагітності у жіночому житті починається особливий період. 
+                                p.boxBlock__descText Саме тоді для майбутньої мами потрібен ще більш чутливий догляд та турбота.
+                            .boxBlock__boxWrapper
+                                img(src="./images/box.png", alt="").boxBlock__box
+                        
+                        
+                        .boxBlock__right
 
-            .topBlock__boxBlock
-                .boxBlock
-                    .boxBlock__descBlock   
-                        p.boxBlock__descText З самого моменту планування вагітності у жіночому житті починається особливий період. 
-                        p.boxBlock__descText Саме тоді для майбутньої мами потрібен ще більш чутливий догляд та турбота.
-                    .boxBlock__boxWrapper
-                        img(src="./images/box.png", alt="").boxBlock__box
-                    .boxBlock__priceBlock
-                        span.boxBlock__oldPrice 4500 грн
-                        span.boxBlock__newPrice 3000* грн
-                    
-                    .boxBlock__buttonBlock
-                        button.button КУПИТИ
+                            .boxBlock__descBlock.boxBlock__descBlock--bottom   
+                                p.boxBlock__descText.boxBlock__descText--bottom З самого моменту планування вагітності у жіночому житті починається особливий період. 
+                                p.boxBlock__descText.boxBlock__descText--bottom Саме тоді для майбутньої мами потрібен ще більш чутливий догляд та турбота.
+                            .boxBlock__priceBlock
+                                span.boxBlock__oldPrice 4500 грн
+                                span.boxBlock__newPrice 3000* грн
+                            
+                            .boxBlock__buttonBlock
+                                button.button.button--buy КУПИТИ
 
             .wrapper
-                .topBlock__descBlock
-                    span.topBlock__descText Для цього німецька компания «Orthomol GmbH» розробила сучасний вітамінний комплекс Orthomol Natal, який містить все необхідне для здоров'я мами та малюка.
+                .topBlock__descBlock.topBlock__descBlock--2
+                    span.topBlock__descText Для цього німецька компания 
+                        b «Orthomol GmbH» 
+                        | розробила сучасний вітамінний комплекс Orthomol Natal, який містить все необхідне для здоров'я мами та малюка.
 
 
         .secondBlock
             img(src="./images/arm_5.png", alt="").secondBlock__arm.secondBlock__arm--5
             .wrapper
+                
                 .secondBlock__descBlock
                     .secondBlock__descItem
                         p.secondBlock__descText Вагітнітність це приємна відповідальність. Тому майбутні мами починають готуватися до цієї події заздалегідь. Вітамінний комплекс розрахований на початок прийому за 3-4 місяці до запліднення. 
@@ -71,42 +94,48 @@ block content
                             span#typing 
                         img(src="./images/search.png", alt="").secondBlock__icon
 
-                .secondBlock__numBlock
-                    img(src="./images/arm_1.png", alt="").secondBlock__arm.secondBlock__arm--1
-                    span.secondBlock__num 1
+                   
 
-                .secondBlock__descBlock.secondBlock__descBlock--2
-                    .secondBlock__descItem
-                        p.secondBlock__descText
-                            b 30 пакетиків з вітамінами у вигляді порошка.
-                        p.secondBlock__descText Порошок потрібно розчинити у воді або змішати з фруктовим соком.
-                        p.secondBlock__descText Приймати один раз на день. Ще і смачно!
+                .secondBlock__content
 
-                    
-                .secondBlock__numBlock
-                    img(src="./images/arm_2.png", alt="").secondBlock__arm.secondBlock__arm--2 
-                    img(src="./images/arm_3.png", alt="").secondBlock__arm.secondBlock__arm--3
-                    span.secondBlock__num 2
+                    .secondBlock__itemStep
 
+                        .secondBlock__numBlock
+                            img(src="./images/arm_1.png", alt="").secondBlock__arm.secondBlock__arm--1
+                            img(src="./images/h_d_1.png", alt="").secondBlock__hnd.secondBlock__hnd--1
+                            span.secondBlock__num.secondBlock__num--1 1
+                        .secondBlock__descBlock.secondBlock__descBlock--2
+                            .secondBlock__descItem
+                                p.secondBlock__descText
+                                    b 30 пакетиків з вітамінами у вигляді порошка.
+                                p.secondBlock__descText Порошок потрібно розчинити у воді або змішати з фруктовим соком.
+                                p.secondBlock__descText Приймати один раз на день. Ще і смачно!
 
-                .secondBlock__descBlock.secondBlock__descBlock--3
-                    .secondBlock__descItem
-                        p.secondBlock__descText
-                            b 30 пакетиків з двома капсулами у кожному.
-                        p.secondBlock__descText Капсули з додатковими вітамінами приймають двічи на день, разом зі сніданком або на обід. 
+                    .secondBlock__itemStep
+                        
+                        .secondBlock__numBlock
+                            img(src="./images/arm_2.png", alt="").secondBlock__arm.secondBlock__arm--2 
+                            img(src="./images/arm_3.png", alt="").secondBlock__arm.secondBlock__arm--3
+                            img(src="./images/h_d_2.png", alt="").secondBlock__hnd.secondBlock__hnd--2
+                            span.secondBlock__num.secondBlock__num--2 2
+                        .secondBlock__descBlock.secondBlock__descBlock--3
+                            .secondBlock__descItem
+                                p.secondBlock__descText
+                                    b 30 пакетиків з двома капсулами у кожному.
+                                p.secondBlock__descText Капсули з додатковими вітамінами приймають двічи на день, разом зі сніданком або на обід. 
 
+                    .secondBlock__itemStep
 
-                .secondBlock__numBlock
-                    img(src="./images/arm_4.png", alt="").secondBlock__arm.secondBlock__arm--4
-                    span.secondBlock__num 3
-
-
-                .secondBlock__descBlock
-                    .secondBlock__descItem
-                        p.secondBlock__descText
-                            b 30 капсул з пробіотиком.
-                        p.secondBlock__descText Пробіотики – це корисні бактерії. 
-                        p.secondBlock__descText Капсулу з пробіотиком приймають кожен день, на ніч.
+                        .secondBlock__numBlock
+                            img(src="./images/arm_4.png", alt="").secondBlock__arm.secondBlock__arm--4
+                            img(src="./images/h_d_3.png", alt="").secondBlock__hnd.secondBlock__hnd--3
+                            span.secondBlock__num.secondBlock__num--3 3
+                        .secondBlock__descBlock.secondBlock__descBlock--4
+                            .secondBlock__descItem
+                                p.secondBlock__descText
+                                    b 30 капсул з пробіотиком.
+                                p.secondBlock__descText Пробіотики – це корисні бактерії. 
+                                p.secondBlock__descText Капсулу з пробіотиком приймають кожен день, на ніч.
 
 
         .thirdBlock 
@@ -122,222 +151,296 @@ block content
 
                     .swiper-pagination
 
+                    .swiper-button-next
+                    .swiper-button-prev
+
         
         .fourthBlock
             .wrapper
-                .table
+                .fourthBlock__content
+                    .table
                     .table__head    
                         .table__title
                             span Денна доза вітамінного комплексу містить:
                     .table__body
-                        .table__subtitle
-                            span Вiтамiни
-                        .table__itemRow
-                            .table__itemColumn
-                                span Витамин C
-                            .table__itemColumn
-                                span 110 мг
-                        .table__itemRow
-                            .table__itemColumn
-                                span Витамин E
-                            .table__itemColumn
-                                span 50 мг 
-                        .table__itemRow
-                            .table__itemColumn
-                                span  Витамин B1
-                            .table__itemColumn
-                                span 3 мг 
-                        .table__itemRow
-                            .table__itemColumn
-                                span  Витамин B2
-                            .table__itemColumn
-                                span 3 мг
-                        .table__itemRow
-                            .table__itemColumn
-                                span Никотинамид
-                            .table__itemColumn
-                                span 36 мг
-                        .table__itemRow
-                            .table__itemColumn
-                                span Витамин B6
-                            .table__itemColumn
-                                span 5 мкг 
-                        .table__itemRow
-                            .table__itemColumn
-                                span Витамин B12
-                            .table__itemColumn
-                                span 9 мкг
-                        .table__itemRow
-                            .table__itemColumn
-                                span Витамин K1
-                            .table__itemColumn
-                                span 60 мкг
-                        .table__itemRow
-                            .table__itemColumn
-                                span Витамин D3
-                            .table__itemColumn
-                                span 5 мкг 
-                        .table__itemRow
-                            .table__itemColumn
-                                span Фолиевая кислота
-                            .table__itemColumn
-                                span 500 мкг
-                        .table__itemRow
-                            .table__itemColumn
-                                span Пантотеновая кислота 
-                            .table__itemColumn
-                                span 18 мг 
-                        .table__itemRow
-                            .table__itemColumn
-                                span Биотин 
-                            .table__itemColumn
-                                span 150 мкг 
+                        .table__itemBlock
+                            .table__subtitle
+                                span Вiтамiни
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Витамин C
+                                .table__itemColumn
+                                    span 110 мг
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Витамин E
+                                .table__itemColumn
+                                    span 50 мг 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span  Витамин B1
+                                .table__itemColumn
+                                    span 3 мг 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span  Витамин B2
+                                .table__itemColumn
+                                    span 3 мг
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Никотинамид
+                                .table__itemColumn
+                                    span 36 мг
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Витамин B6
+                                .table__itemColumn
+                                    span 5 мкг 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Витамин B12
+                                .table__itemColumn
+                                    span 9 мкг
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Витамин K1
+                                .table__itemColumn
+                                    span 60 мкг
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Витамин D3
+                                .table__itemColumn
+                                    span 5 мкг 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Фолиевая кислота
+                                .table__itemColumn
+                                    span 500 мкг
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Пантотеновая кислота 
+                                .table__itemColumn
+                                    span 18 мг 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Биотин 
+                                .table__itemColumn
+                                    span 150 мкг 
 
                         //- 2
-
-                        .table__subtitle
-                            span Минеральные вещества, микроэлементы и другие микропитательные вещества
-                        .table__itemRow
-                            .table__itemColumn
-                                span Кальций 
-                            .table__itemColumn
-                                span 400 мг 
-                        .table__itemRow
-                            .table__itemColumn
-                                span Магний 
-                            .table__itemColumn
-                                span 180 мг 
-                        .table__itemRow
-                            .table__itemColumn
-                                span  Селен
-                            .table__itemColumn
-                                span 30 мкг  
-                        .table__itemRow
-                            .table__itemColumn
-                                span  Железо
-                            .table__itemColumn
-                                span 5 мг
-                        .table__itemRow
-                            .table__itemColumn
-                                span Цинк 
-                            .table__itemColumn
-                                span 5 мг
-                        .table__itemRow
-                            .table__itemColumn
-                                span Медь 
-                            .table__itemColumn
-                                span 1000 мкг 
-                        .table__itemRow
-                            .table__itemColumn
-                                span Молибден 
-                            .table__itemColumn
-                                span 1000 мкг 
-                                span 
-                        .table__itemRow
-                            .table__itemColumn
-                                span Хром
-                            .table__itemColumn
-                                span 60 мкг 
-                        .table__itemRow
-                            .table__itemColumn
-                                span Йод 
-                            .table__itemColumn
-                                span 150 мкг 
-                        .table__itemRow
-                            .table__itemColumn
-                                span Натуральный β-каротин
-                            .table__itemColumn
-                                span 2 мг 
+                        .table__itemBlock
+                            .table__subtitle
+                                span Минеральные вещества, микроэлементы и другие микропитательные вещества
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Кальций 
+                                .table__itemColumn
+                                    span 400 мг 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Магний 
+                                .table__itemColumn
+                                    span 180 мг 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span  Селен
+                                .table__itemColumn
+                                    span 30 мкг  
+                            .table__itemRow
+                                .table__itemColumn
+                                    span  Железо
+                                .table__itemColumn
+                                    span 5 мг
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Цинк 
+                                .table__itemColumn
+                                    span 5 мг
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Медь 
+                                .table__itemColumn
+                                    span 1000 мкг 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Молибден 
+                                .table__itemColumn
+                                    span 800 мкг 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Хром
+                                .table__itemColumn
+                                    span 60 мкг 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Йод 
+                                .table__itemColumn
+                                    span 150 мкг 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Натуральный β-каротин
+                                .table__itemColumn
+                                    span 2 мг 
 
                         //- 3
-
-                        .table__subtitle
-                            span Эссенциальные жирные кислоты
-                        .table__itemRow
-                            .table__itemColumn
-                                span 
-                                    | Рыбий жир, содержит: 
-                                    br 
-                                    | омега-3-жирные
-                                    br 
-                                    | кислоты, из них: 
-                            .table__itemColumn
-                                span 420 мг	 
-                        .table__itemRow
-                            .table__itemColumn
-                                span Эйкозапентаеновая
-                                    br 
-                                    | кислота (EPA)
-                            .table__itemColumn
-                                span 300 мг	
-                        .table__itemRow
-                            .table__itemColumn
-                                span Докозагексаеновая
-                                    br
-                                    | кислота (DHA)
-                            .table__itemColumn
-                                span 50 мг
+                        .table__itemBlock
+                            .table__subtitle
+                                span Эссенциальные жирные кислоты
+                            .table__itemRow
+                                .table__itemColumn
+                                    span 
+                                        | Рыбий жир, содержит: 
+                                        br 
+                                        | омега-3-жирные
+                                        br 
+                                        | кислоты, из них: 
+                                .table__itemColumn
+                                    span 420 мг	 
+                            .table__itemRow
+                                .table__itemColumn
+                                    span Эйкозапентаеновая
+                                        br 
+                                        | кислота (EPA)
+                                .table__itemColumn
+                                    span 300 мг	
+                            .table__itemRow
+                                .table__itemColumn
+                                    span
+                                        br
+                                        | кислота (DHA)
+                                .table__itemColumn
+                                    span 50 мг
 
                         //- 4
 
-
-                        .table__subtitle
-                            span Пробиотики
-                        .table__itemRow
-                            .table__itemColumn
-                                span 
-                                    | Культура молочнокислых 
-                                    br 
-                                    | бактерий, содержит: 
-                                    br 
-                                    | Пробиотики
-                            .table__itemColumn
-                                span 3 x 109
-                        .table__itemRow
-                            .table__itemColumn
-                                span (Lactococcus lactis,
-                                    br 
-                                    | Lactobacillus casei,
-                                    br 
-                                    | Lactobacillus acidophilus,
-                                    br 
-                                    | Bifidobacterium bifidum) 
-                            .table__itemColumn
-                                span KBE°	
+                        .table__itemBlock
+                            .table__subtitle
+                                span Пробиотики
+                            .table__itemRow
+                                .table__itemColumn
+                                    span 
+                                        | Культура молочнокислых 
+                                        br 
+                                        | бактерий, содержит: 
+                                        br 
+                                        | Пробиотики
+                                .table__itemColumn
+                                    span 3 x 109
+                            .table__itemRow
+                                .table__itemColumn
+                                    span (Lactococcus lactis,
+                                        br 
+                                        | Lactobacillus casei,
+                                        br 
+                                        | Lactobacillus acidophilus,
+                                        br 
+                                        | Bifidobacterium bifidum) 
+                                .table__itemColumn
+                                    span KBE°	
 
 
         .fifthBlock
             .wrapper
                 .fifthBlock__title
                     span Всі ці речовини вкрай необхідні малюку:
-                
+
+            .fifthBlock__content
+            
                 .fifthBlock__blockRings
-                    img(src="./images/ring0.png", alt="").fifthBlock__ring.fifthBlock__ring--0
-                    img(src="./images/ring1.png", alt="").fifthBlock__ring
-                    img(src="./images/ring2.png", alt="").fifthBlock__ring
-                    img(src="./images/ring3.png", alt="").fifthBlock__ring
-                    img(src="./images/ring4.png", alt="").fifthBlock__ring
-                    img(src="./images/ring5.png", alt="").fifthBlock__ring
-                    img(src="./images/ring6.png", alt="").fifthBlock__ring
-                    img(src="./images/ring7.png", alt="").fifthBlock__ring
+                    img(src="./images/ring0.png", alt="").fifthBlock__ring.fifthBlock__ring--child
+                    img(src="./images/ring1.png", alt="").fifthBlock__ring.fifthBlock__ring--0
+                    img(src="./images/ring2.png", alt="").fifthBlock__ring.fifthBlock__ring--1
+                    img(src="./images/ring3.png", alt="").fifthBlock__ring.fifthBlock__ring--2
+                    img(src="./images/ring4.png", alt="").fifthBlock__ring.fifthBlock__ring--3
+                    img(src="./images/ring5.png", alt="").fifthBlock__ring.fifthBlock__ring--4
+                    img(src="./images/ring6.png", alt="").fifthBlock__ring.fifthBlock__ring--5
+                    img(src="./images/ring7.png", alt="").fifthBlock__ring.fifthBlock__ring--6
                 
 
                 
-            .fifthBlock__slider 
-                .sliderSecond
-                    .swiper-container.slider2
-                        .swiper-wrapper
-                            .swiper-slide sdfsdf sdfsdfsdf sdfsdfsdf sdfsdf
-                            .swiper-slide 4 sdfsdf sdfsdfsdf sdfsdfsdf sdfsdf
-                            .swiper-slide 5 sdfsdf sdfsdfsdf sdfsdfsdf sdfsdf
-                            .swiper-slide 6 sdfsdf sdfsdfsdf sdfsdfsdf sdfsdf
-                            .swiper-slide 8 sdfsdf sdfsdfsdf sdfsdfsdf sdfsdf
+                .fifthBlock__slider 
+                    .sliderSecond
+                        .swiper-container.slider2
+                            .swiper-wrapper
+                                .swiper-slide
+                                    .sliderSecond__slideContent 
+                                        .sliderSecond__text
+                                            span 
+                                                b Вітаміни К, D
+                                                    br
+                                                    | і кальцій 
+                                        .sliderSecond__text.sliderSecond__text--2
+                                            span для розвитку скелета
+                                .swiper-slide 
+                                    .sliderSecond__slideContent 
+                                        .sliderSecond__text
+                                            span 
+                                                b Вітаміни С, Е, D, 
+                                                    br
+                                                    | цинк, селен 
+                                        .sliderSecond__text.sliderSecond__text--2
+                                            span для імунітету мами
+                                .swiper-slide 
+                                    .sliderSecond__slideContent 
+                                        .sliderSecond__text
+                                            span 
+                                                b Омега 3, 
+                                                    br
+                                                    | Жирні кислоти 
+                                        .sliderSecond__text.sliderSecond__text--2
+                                            span для розвитку мозку, міцного 
+                                                br 
+                                                | імунітету малюка
+                                .swiper-slide 
+                                    .sliderSecond__slideContent 
+                                        .sliderSecond__text
+                                            span 
+                                                b Йод 
+                                        .sliderSecond__text.sliderSecond__text--2
+                                            span для щитовидної залози 
+                                                br
+                                                | та обміну речовин
+                                .swiper-slide
+                                    .sliderSecond__slideContent 
+                                        .sliderSecond__text
+                                            span 
+                                                b Віт. групи B  
+                                        .sliderSecond__text.sliderSecond__text--2
+                                            span для підтримки обміну вуглецю, 
+                                                br
+                                                | жирового та білкового обміну малюка
+                                .swiper-slide
+                                    .sliderSecond__slideContent 
+                                        .sliderSecond__text
+                                            span 
+                                                b Пробіотики 
+                                        .sliderSecond__text.sliderSecond__text--2
+                                            span зміцнення захисних  
+                                                br
+                                                | сил організму
+                                .swiper-slide
+                                    .sliderSecond__slideContent 
+                                        .sliderSecond__text
+                                            span 
+                                                b Фолієва кислота,  
+                                                    br 
+                                                    | вітамін B12, залізо
+                                        .sliderSecond__text.sliderSecond__text--2
+                                            span для кровотворення, здорового  
+                                                br
+                                                | розвитку органів малюка. 
+
+
+                        .btn-prev
+                        .btn-next
 
             .wrapper
 
                 .fifthBlock__descBlock
                     .fifthBlock__subtitle
-                        span Вітаміни Orthomol це:
+                        span Вітаміни 
+                            b Orthomol 
+                            | це:
                     .fifthBlock__text
                         p &emsp;  Професійний догляд за здоров'ям мами та малюка. Комплекс містить оптимальну концентрацію вітамінів, мінеральних речовин та пробіотиків; 
                     .fifthBlock__text
@@ -347,23 +450,42 @@ block content
 
             .fifthBlock__boxBlock
 
-                .boxBlock.boxBlock--2
-                    .boxBlock__boxWrapper
-                        img(src="./images/box.png", alt="").boxBlock__box
-                    .boxBlock__priceBlock
-                        span.boxBlock__oldPrice 4500 грн
-                        span.boxBlock__newPrice 3000* грн
-                    
-                    .boxBlock__buttonBlock.boxBlock__buttonBlock--2
-                        button.button КУПИТИ
 
-                    .boxBlock__descBlock.boxBlock__descBlock--2
-                        p.boxBlock__descText *Залиш свій актуальній email та отримай 
-                            b знижку 25% 
-                            | на вітамінний комплекс Orthomol Natal від «Orthomol GmbH».    
+                .wrapper
 
-                    .boxBlock__buttonBlock
-                        button.button.button--blue залишити email
+                    .boxBlock.boxBlock--2
+
+                        .boxBlock__left
+                            .boxBlock__boxWrapper
+                                img(src="./images/box.png", alt="").boxBlock__box.boxBlock__box--2
+                                .boxBlock__subTextBlock
+                                    p.boxBlock__subText *Залиш свій актуальній email та отримай 
+                                        b знижку 25% 
+                                        | на вітамінний комплекс Orthomol Natal від «Orthomol GmbH». 
+                        
+                        .boxBlock__right.boxBlock__right--2
+
+                            .boxBlock__descBlock
+                                
+                                    p.boxBlock__descText З самого моменту планування вагітності у жіночому житті починається особливий період.
+                                    p.boxBlock__descText Саме тоді для майбутньої мами потрібен ще більш чутливий догляд та турбота.
+
+                            .boxBlock__priceBlock
+                                span.boxBlock__oldPrice 4500 грн
+                                span.boxBlock__newPrice 3000* грн
+                            
+                            .boxBlock__buttonBlock.boxBlock__buttonBlock--2
+                                button.button.button--buy КУПИТИ
+
+                            .boxBlock__descBlock.boxBlock__descBlock--2
+                                p.boxBlock__descText *Залиш свій актуальній email та отримай 
+                                    b знижку 25% 
+                                    | на вітамінний комплекс Orthomol Natal від «Orthomol GmbH».    
+
+                            .boxBlock__buttonBlock
+                                button.button.button--blue залишити email
             
 
         include ../common/footer.pug
+
+        include ../common/popaps.pug

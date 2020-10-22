@@ -1,0 +1,249 @@
+.popapWrapper.popap_prom
+    .popap_prom--1
+
+        .popapWrapper__content.popapWrapper__content--prom
+            .popapWrapper__title
+                span Бажаєш отримати знижку
+                    br 
+                    | -25% на покупку? 
+            .popapWrapper__ul
+                ul
+                    li Залиш свій дійсний email
+                    li Отримай промокод
+                    li Використай промокод на будь-яку покупку
+            .popapWrapper__emailBlock
+                input(type="mail" placeholder="Email")
+            .popapWrapper__buttonsBlock
+                button.button.button--submit НАДІШЛИ СВІЙ EMAIL ТА ОТРИМАЙ ЗНИЖКУ
+                button.button.button--close ДЯКУЮ, В МЕНЕ ВЖЕ Є ПРОМОКОД
+
+    .popap_prom--2
+        .popapWrapper__content.popapWrapper__content--prom
+            .popapWrapper__title.popapWrapper__title--2
+                span Вітаємо!
+                    br 
+                    | Ви отримали знижку -25%
+            .popapWrapper__text
+                span Промокод:
+            .popapWrapper__promoCode
+                .popapWrapper__promoBlock
+                    span promo2020
+            .popapWrapper__text
+                span Збережіть цей промокод щоб використати його при будь-якій покупці
+            .popapWrapper__buttonsBlock
+                button.button.button--thanks ДЯКУЮ
+
+
+
+
+
+
+.popapWrapper.popap_ordering    
+    .popap_ordering--1
+
+        .popapWrapper__content.popapWrapper__content--ordering
+
+            .popapWrapper__head
+
+                .popapWrapper__left
+                    .popapWrapper__blockImg
+                
+                .popapWrapper__right
+                    
+                    .popapWrapper__top
+
+                        .popapWrapper__counter
+                            .quantity-block
+                                .quantity-arrow-plus +
+                                input.quantity-num(type="number" value="1")
+                                .quantity-arrow-minus -
+
+                        .popapWrapper__priceBlock
+                            .cstmPrice
+                                .popapWrapper__old
+                                    span 10 400 грн
+                                .popapWrapper__new
+                                    span 8000 грн
+                                .popapWrapper__discount
+                                    span знижка 2400 грн
+
+                    .popapWrapper__bottom
+                        .popapWrapper__text
+                            span *Однієї упаковки вистачить на 30 днів. При замовленні трьох упаковок та більше ви заощадите додатково 200 гривень на кожній.
+
+
+
+            .popapWrapper__title.popapWrapper__title--order1
+                span 1. Виберіть форму випуску:
+
+            .popapWrapper__text
+                p Склад та ціна для двох форм випуску однакові. 
+                p Обирайте що зручно саме вам.
+
+            .popapWrapper__radioBlock
+                .popapWrapper__radioItem
+                    p
+                        input(type="radio" id="price1" name="radio-tabl" checked)
+                        label(for="price1").label1 
+                            span Порошок та капсули
+                            img(src="./images/table1.png", alt="")
+                    
+                .popapWrapper__radioItem
+                    p
+                        input(type="radio" id="price2" name="radio-tabl" )
+                        label(for="price2") 
+                            span.mrg Таблетки та капсули
+                            img(src="./images/table2.png", alt="")
+
+            .popapWrapper__title.popapWrapper__title--order2
+                span 2:  Заповніть поля:
+
+            .popapWrapper__formBlock
+
+                .popapWrapper__inputs
+
+                    .popapWrapper__inputItem
+                        input(type="text" placeholder="Ім'я*")
+                    .popapWrapper__inputItem
+                        input(type="number" placeholder="Телефон*")
+                    .popapWrapper__inputItem
+                        input(type="mail" placeholder="Email")
+                    .popapWrapper__inputItem
+                        input(type="text" placeholder="Промокод")
+
+
+                .popapWrapper__check
+                    .popapWrapper__checkBlock
+                        .check
+                            label.checkboxcustom
+                                input.checkbox(type='checkbox' name='radio-test' checked='')
+                                span.checkbox-custom
+                                span.label Надсилаючи цю форму я даю згоду  на обробку персональної інформації  згідно з Політикою конфіденційності.
+
+                    .popapWrapper__priceBlock.popapWrapper__priceBlock--2
+                            .cstmPrice
+                                .popapWrapper__old
+                                    span 10 400 грн
+                                .popapWrapper__new
+                                    span 8000 грн
+                                .popapWrapper__discount
+                                    span знижка 2400 грн
+
+                    .popapWrapper__buttonBlock
+                        button.button.button--next КУПИТИ
+                
+
+    .popap_ordering--2
+        .popapWrapper__content  
+            .popapWrapper__title
+                span ОПЛАТА ТА ДОСТАВКА
+            .popapWrapper__text
+                p Ми раді запропонувати вам безкоштовну доставку за умовою передоплати замовлення. 
+                p Крім того, в нас є декілька інших варіантів.
+
+            .popapWrapper__text
+                span Будь-ласка, оберіть:
+
+            .popapWrapper__inputsBlock.popapWrapper__inputsBlock--2
+                .popapWrapper__inputItem.popapWrapper__inputItem--2
+                    input(type="text" placeholder="Область")
+                .popapWrapper__inputItem.popapWrapper__inputItem--2
+                    input(type="text" placeholder="Місто")
+
+
+            .popapWrapper__radioBlock.popapWrapper__radioBlock--2
+                .popapWrapper__radioItem.popapWrapper__radioItem--2
+                    p
+                        input(type="radio" id="price1" name="radio-tabl" checked)
+                        label(for="price1")
+                            span Забрати замовлення з нашого магазину, якій знаходиться за адресою 
+                                br
+                                | м.Одеса вул. Буніна 20.
+                    
+                .popapWrapper__radioItem.popapWrapper__radioItem--2
+                    p
+                        input(type="radio" id="price2" name="radio-tabl" )
+                        label(for="price2") 
+                            span.mrg Нова пошта,
+                                br
+                                | надлженим платежом
+
+                .popapWrapper__radioItem.popapWrapper__radioItem--2
+                    p
+                        input(type="radio" id="price2" name="radio-tabl" )
+                        label(for="price2") 
+                            span.mrg Нова пошта,
+                                br
+                                | кур’єром
+
+                .popapWrapper__radioItem.popapWrapper__radioItem--2
+                    p
+                        input(type="radio" id="price2" name="radio-tabl" )
+                        label(for="price2") 
+                            span.mrg Безкоштовна доставка
+                                br
+                                | до відділення Нової пошти
+
+                .popapWrapper__hideInputsBlock.popapWrapper__inputItem.popapWrapper__inputItem--2
+                    .popapWrapper__cash
+                        input(type="text" placeholder="Номер відділення")
+                    
+                    .popapWrapper__courier
+                        .popapWrapper__courierInputs
+                            input(type="text" placeholder="Вулиця")
+                            input(type="text" placeholder="Номер будинку")
+                        .popapWrapper__desc
+                            span
+                                b УВАГА!  
+                                | КУР'ЄРСЬКА ДОСТАВКА ОПЛАЧУЄТЬСЯ ЗА ТАРИФАМИ НОВОЇ ПОШТИ. 
+                                br
+                                | ЯКЩО ВИ БАЖАЄТЕ ОТРИМАТИ БЕЗКОШТОВНУ ДОСТАВКУ, ОБЕРІТЬ ВАРІАНТ
+                                br
+                                | ДОСТАВКИ ДО ВІДДІЛЕННЯ НОВОЇ ПОШТИ.  
+
+                    
+                    .popapWrapper__delivery
+                        input(type="text" placeholder="Номер відділення")
+
+                .popapWrapper__buttonsBlock.popapWrapper__buttonsBlock--last
+                    button.button.button--back повернутися
+                    button.button.button--submitForm підтвердити
+
+
+
+
+    .popap_thank
+        .popapWrapper__content
+
+            .popapWrapper__title.popapWrapper__title--thank
+                img(src="./images/th_h.png", alt="")
+                span ДЯКУЄМО ЗА ЗАМОВЛЕННЯ! 
+            
+            .popapWrapper__text.popapWrapper__text--thank
+                span Ми зателефонуємо вам найближчим часом.
+
+            .popapWrapper__socialBlock
+                .popapWrapper__icn
+                    a(href="#")
+                        img(src="./images/fb_b.png", alt="")
+                    a(href="#")
+                        img(src="./images/inst_b.png", alt="")
+
+                .popapWrapper__thankDesc
+                    span ПРИЄДНУЙТЕСЬ ДО НАС 
+                        br
+                        | В СОЦІАЛЬНИХ МЕРЕЖАХ!
+                
+            .popapWrapper__numberBlock
+                .popapWrapper__number
+                    a(href="tel:0800455040") 0 800 45 50 40
+
+                .popapWrapper__thankDesc
+                    span Дзвiнки безкоштовнi
+
+
+                
+                
+
+                
+            
